@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/healthcondition.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="logo">Nirvana</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="howtohelp.html">How to Help</a></li>
+            <li><a href="#">Mental Health Conditions</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
+    </nav>
+
+   <!-- Mental Health Conditions Section -->
+   <section class="conditions-section">
+    <h1>Mental <label id="h1-green"> Health Conditions </label> </h1>
+
+    <div class="condition">
+        <h2 class="condition-title" onclick="toggleDescription('adhd', this)">
+        ADHD<i class="fa-solid fa-angle-down"></i>
+        </h2>
+        <p class="condition-description" id="adhd">
+            ADHD (Attention Deficit Hyperactivity Disorder) is a neurodevelopmental condition characterized by difficulty sustaining attention, hyperactivity, and impulsive behaviors. It often starts in childhood and can continue into adulthood. Individuals with ADHD may struggle with focusing on tasks, following through on instructions, or sitting still for extended periods. Although it can present challenges in academic, professional, and social environments, ADHD can be managed effectively with proper interventions, therapy, and in some cases, medication. With early diagnosis and a structured environment, individuals with ADHD can thrive and manage their symptoms successfully.
+        </p>
+    </div>
+
+    <div class="condition">
+        <h2 class="condition-title" onclick="toggleDescription('depression', this)">
+            Depression <i class="fa-solid fa-angle-down"></i>
+        </h2>
+        <p class="condition-description" id="depression">
+            Depression is a widespread mood disorder that causes persistent feelings of sadness, hopelessness, and a lack of interest or pleasure in activities. It can affect how individuals feel, think, and handle daily activities such as sleeping, eating, or working. Depression is not just a temporary phase of sadness but a medical condition that often requires treatment, including therapy and medication. It may result from a combination of genetic, biological, environmental, and psychological factors, and can significantly reduce the quality of life if left untreated. Support systems and professional help are essential in managing depression effectively.
+        </p>
+    </div>
+
+    <div class="condition">
+        <h2 class="condition-title" onclick="toggleDescription('bipolar', this)">
+            Bipolar Disorder <i class="fa-solid fa-angle-down"></i>
+        </h2>
+        <p class="condition-description" id="bipolar">
+            Bipolar disorder is a mental health condition characterized by extreme mood swings, including emotional highs (mania or hypomania) and lows (depression). During manic episodes, individuals may feel euphoric, energized, or unusually irritable, often engaging in risky behaviors. Depressive episodes, on the other hand, bring intense feelings of sadness, hopelessness, and fatigue. These mood shifts can severely impact one’s ability to function day-to-day. Treatment typically includes mood stabilizers, therapy, and lifestyle adjustments to help manage the condition. Recognizing early signs and getting timely treatment can prevent severe disruptions in personal and professional life.
+        </p>
+    </div>
+
+    <div class="condition">
+        <h2 class="condition-title" onclick="toggleDescription('anxiety', this)">
+            Anxiety <i class="fa-solid fa-angle-down"></i>
+        </h2>
+        <p class="condition-description" id="anxiety">
+            Anxiety is a natural response to stress, but anxiety disorders involve excessive and persistent worry or fear about everyday situations. Individuals with anxiety disorders may experience symptoms such as rapid heart rate, sweating, restlessness, and difficulty concentrating. There are several types of anxiety disorders, including generalized anxiety disorder (GAD), panic disorder, and social anxiety disorder. Anxiety can significantly interfere with daily activities, and it often requires treatment through therapy, lifestyle changes, and sometimes medication to manage symptoms effectively. Building coping strategies and seeking support are key in reducing its impact on daily life.
+        </p>
+    </div>
+</section>
+
+<!-- Mental Health Quiz Section -->
+<section class="quiz-section">
+    <div class="innersection"> 
+    <h2 id="quizh2">Take a Quick <label id="quiz-colour">Mental Health Quiz </label> </h2>
+    <form class="quiz-form">
+      <label>Do you often feel anxious or stressed?</label><br>
+      <input type="radio" name="anxiety" value="yes"> Yes<br>
+      <input type="radio" name="anxiety" value="no"> No<br><br>
+  
+      <label>Do you find it hard to focus on tasks?</label><br>
+      <input type="radio" name="focus" value="yes"> Yes<br>
+      <input type="radio" name="focus" value="no"> No<br><br>
+  
+      <label>Have you been feeling down or hopeless lately?</label><br>
+      <input type="radio" name="depression" value="yes"> Yes<br>
+      <input type="radio" name="depression" value="no"> No<br><br>
+  
+      <button type="button" onclick="showQuizResult()">Submit</button>
+    </form>
+  
+    <p id="quiz-result"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Mental Health Support © 2024</p>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+    </div>
+    <p>You're not alone. <br> Reach out anytime at <a href="mailto:support@mentalhealth.com">support@mentalhealth.com</a></p>
+</footer>
+  
+  <script src="/JS/healthcond.js"></script>
+</body>
+</html>
