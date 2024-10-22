@@ -20,16 +20,23 @@ function toggleDescription(id, element) {
    }
 
    function showQuizResult() {
-const anxiety = document.querySelector('input[name="anxiety"]:checked').value;
-const focus = document.querySelector('input[name="focus"]:checked').value;
-const depression = document.querySelector('input[name="depression"]:checked').value;
-let result = '';
+    const anxiety = document.querySelector('input[name="anxiety"]:checked').value;
+    const focus = document.querySelector('input[name="focus"]:checked').value;
+    const depression = document.querySelector('input[name="depression"]:checked').value;
+    let result = '';
 
-if (anxiety === 'yes' || focus === 'yes' || depression === 'yes') {
-result = "It seems you may be experiencing some mental health challenges. Consider seeking support.";
-} else {
-result = "You're doing well! Keep maintaining your mental health.";
+    if (anxiety === 'yes' || focus === 'yes' || depression === 'yes') {
+        result = "It seems you may be experiencing some mental health challenges. Consider seeking support.";
+    } else {
+        result = "You're doing well! Keep maintaining your mental health.";
+    }
+
+    document.getElementById('quiz-result').innerText = result;
+    
+    // Display a popup message indicating the form has been submitted
+    alert("Your quiz has been submitted.");
+
+     // Reset the form after submission
+     document.getElementById('quiz-form').reset();
 }
 
-document.getElementById('quiz-result').innerText = result;
-}
